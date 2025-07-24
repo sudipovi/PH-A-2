@@ -23,12 +23,15 @@
 
 .flex {
   display: flex;
-  align-items: center;
 }
 
 .container {
   max-width: 1280px;
   margin: auto;
+}
+
+.orange-clr {
+  color: #e95a08;
 }
 
 /* Navbar Style */
@@ -60,4 +63,38 @@ i {
 .home,
 i {
   color: #252432;
+}
+
+/* Nav Banner Style */
+
+.banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  margin-bottom: 120px;
+}
+
+.banner-left {
+  width: 50%;
+}
+
+.banner-flwr {
+  width: 50%;
+}
+
+/* Our plants */
+
+.our-plants .text-contant {
+  text-align: center;
+}
+
+.our-plants h2 {
+  font-weight: bold;
+  margin-bottom: 30px;
+  font-size: 50px;
+}
+
+.our-plants p {
+  font-size: 22px;
+  opacity: 50%;
 }
