@@ -39,11 +39,14 @@
 .navbar {
   justify-content: space-between;
   margin-top: 30px;
+  align-items: center;
 }
+
+
 
 nav li {
   list-style: none;
-  margin-right: 50px;
+  margin-left: 50px;
 }
 nav ul {
   display: flex;
@@ -70,22 +73,24 @@ i {
 .banner {
   display: flex;
   justify-content: space-between;
-  align-items: end;
+  align-items: center;
   margin-bottom: 120px;
+  max-width: 1280px;
 }
 
-.banner-left {
+/* .banner-left {
   width: 50%;
 }
 
 .banner-flwr {
   width: 50%;
-}
+} */
 
 /* Our plants */
 
 .our-plants .text-contant {
   text-align: center;
+  margin-bottom: 90px;
 }
 
 .our-plants h2 {
@@ -97,4 +102,34 @@ i {
 .our-plants p {
   font-size: 22px;
   opacity: 50%;
+}
+
+/* Card Section */
+
+.plant-card{
+  text-align: center;
+}
+
+.name{
+  font-weight: bold;
+  margin-top: 18px;
+  margin-bottom: 5px;
+}
+
+.price{
+  font-weight: bold;
+  font-size: 15px;
+  margin-bottom: 25px;
+}
+
+.add-cart{
+  width: 270px;
+  height: 50px;
+  border: none;
+  background-color: #E95A08;
+  color: white;
+}
+
+.card-grid{
+  display: grid;
 }
