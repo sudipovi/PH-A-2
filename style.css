@@ -34,6 +34,10 @@
   color: #e95a08;
 }
 
+.bottom-gap {
+  margin-bottom: 120px;
+}
+
 /* Navbar Style */
 
 .navbar {
@@ -41,8 +45,6 @@
   margin-top: 30px;
   align-items: center;
 }
-
-
 
 nav li {
   list-style: none;
@@ -71,20 +73,21 @@ i {
 /* Nav Banner Style */
 
 .banner {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   margin-bottom: 120px;
-  max-width: 1280px;
+  margin-top: 120px;
+  align-items: end;
 }
 
-/* .banner-left {
-  width: 50%;
+.banner-left h1 {
+  font-weight: bold;
+  font-size: 65px;
+  margin-bottom: 15px;
 }
 
-.banner-flwr {
-  width: 50%;
-} */
+.banner-left p {
+  font-size: 22px;
+  opacity: 50%;
+}
 
 /* Our plants */
 
@@ -106,30 +109,129 @@ i {
 
 /* Card Section */
 
-.plant-card{
+.plant-card {
   text-align: center;
 }
 
-.name{
+.name {
   font-weight: bold;
   margin-top: 18px;
   margin-bottom: 5px;
 }
 
-.price{
+.price {
   font-weight: bold;
   font-size: 15px;
   margin-bottom: 25px;
 }
 
-.add-cart{
+.add-cart {
   width: 270px;
   height: 50px;
   border: none;
-  background-color: #E95A08;
+  background-color: #e95a08;
+  color: white;
+  margin-bottom: 30px;
+}
+
+.card-grid {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(4, 2fr);
+}
+
+/* Plant Lover */
+
+.plant-lover {
+  justify-content: space-between;
+  margin-top: 250px;
+  align-items: center;
+  margin-bottom: 150px;
+}
+
+.lover-desc {
+  margin-left: 10px;
+}
+
+.lover-desc h2 {
+  font-weight: bold;
+  font-size: 50px;
+}
+
+.lover-desc p {
+  font-size: 22px;
+}
+
+.lover-desc li {
+  margin: 10px 0px;
+  opacity: 50%;
+}
+
+/* Join Section */
+
+.join {
+  justify-content: space-between;
+  background-image: url(./assets/news-letter-bg.png);
+  background-size: cover;
+}
+
+.join h1 {
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  font-size: 52px;
+  margin-bottom: 30px;
+  padding-top: 200px;
   color: white;
 }
 
-.card-grid{
-  display: grid;
+.join-mail {
+  justify-content: space-around;
+}
+
+.mail {
+  border: none;
+  background-color: white;
+  color: black;
+  width: 644px;
+  height: 50px;
+  margin-bottom: 500px;
+  padding-left: 20px;
+}
+
+.sub {
+  background-color: #e95a08;
+  border: none;
+  color: white;
+  width: 180px;
+  height: 50px;
+}
+
+/* Footer Style */
+.footer {
+  justify-content: space-between;
+  align-items: top;
+}
+
+.part1 img {
+  margin-bottom: 15px;
+}
+
+.part1 p {
+  opacity: 50%;
+}
+
+footer li {
+  list-style: none;
+  margin-bottom: 30px;
+  font-family: inter;
+  opacity: 50%;
+}
+
+.icons {
+  margin-left: 15px;
+}
+
+.tw {
+  margin-bottom: 7px;
 }
