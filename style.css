@@ -201,6 +201,7 @@ i {
 
 .join-mail {
   justify-content: space-around;
+ 
 }
 
 .mail {
@@ -211,6 +212,8 @@ i {
   height: 50px;
   margin-bottom: 500px;
   padding-left: 20px;
+  margin-left: 70px;
+  
 }
 
 .sub {
@@ -219,6 +222,8 @@ i {
   color: white;
   width: 180px;
   height: 50px;
+  margin-left: -500px;
+  
 }
 
 /* Footer Style */
