@@ -66,7 +66,7 @@ i {
 }
 
 .home,
-i {
+i, .cart {
   color: #252432;
 }
 
@@ -181,6 +181,26 @@ i {
 
 }
 
+/* Deal Section */
+
+.deal-desc{
+ text-align: center;
+}
+
+.deal-desc h2{
+  font-weight: bold;
+  font-size: 50px;
+  margin-bottom: 20px;
+  margin-top: 100px;
+}
+
+.deal-desc p{
+  opacity: 50%;
+}
+
+
+
+
 /* Join Section */
 
 .join {
@@ -253,4 +273,68 @@ footer li {
 
 .tw {
   margin-bottom: 7px;
+}
+
+
+
+/* Responsive for Mobile */
+
+@media (max-width: 768px){
+
+  nav .home {
+    display: none;
+  }
+  nav .about{
+    display: none;
+  }
+  nav .shop{
+    display: none;
+  }
+
+  .banner{
+    flex-direction: column-reverse;
+  }
+  .banner-img{
+    margin-bottom: 15px;
+  }
+  .banner-left h1{
+    font-size: 25px;
+  }
+
+  .card-grid {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5px;
+}
+
+.badge{
+  display: none;
+}
+
+.plant-lover{
+  flex-direction: column;
+}
+.flower-store{
+  margin-bottom: 15px;
+}
+
+.footer{
+  flex-direction: column;
+  margin: auto;
+}
+
+.join h1{
+  font-size: 22px;
+}
+
+.mail{
+  width: 218px;
+  align-items: center;
+}
+.sub{
+  width: 100px;
+  align-items: center;
+}
+
 }
