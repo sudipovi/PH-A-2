@@ -147,6 +147,7 @@ i {
   margin-top: 250px;
   align-items: center;
   margin-bottom: 150px;
+  
 }
 
 .lover-desc {
@@ -165,6 +166,19 @@ i {
 .lover-desc li {
   margin: 10px 0px;
   opacity: 50%;
+}
+
+.lover-img{
+   position: relative;
+ 
+}
+
+.badge{
+  width: 280px;
+   margin-bottom: 400px;
+  margin-left: -150px; 
+ 
+
 }
 
 /* Join Section */
