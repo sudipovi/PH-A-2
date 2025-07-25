@@ -66,7 +66,8 @@ i {
 }
 
 .home,
-i, .cart {
+i,
+.cart {
   color: #252432;
 }
 
@@ -147,7 +148,6 @@ i, .cart {
   margin-top: 250px;
   align-items: center;
   margin-bottom: 150px;
-  
 }
 
 .lover-desc {
@@ -168,38 +168,81 @@ i, .cart {
   opacity: 50%;
 }
 
-.lover-img{
-   position: relative;
- 
+.lover-img {
+  position: relative;
 }
 
-.badge{
+.badge {
   width: 280px;
-   margin-bottom: 400px;
-  margin-left: -150px; 
- 
-
+  margin-bottom: 400px;
+  margin-left: -150px;
 }
 
 /* Deal Section */
 
-.deal-desc{
- text-align: center;
+.deal-desc {
+  text-align: center;
 }
 
-.deal-desc h2{
+.deal-desc h2 {
   font-weight: bold;
   font-size: 50px;
   margin-bottom: 20px;
   margin-top: 100px;
 }
 
-.deal-desc p{
+.deal-desc p {
   opacity: 50%;
+  margin-bottom: 50px;
 }
 
+.deal-sec {
+  justify-content: space-between;
+  align-items: center;
+}
 
+.upper {
+  background-image: url(./assets/deal-bloom.png);
+  background-size: cover;
+  width: 360px;
+  height: 200px;
+  margin-bottom: 30px;
+  border-radius: 20px;
+  text-align: center;
+  padding-top: 80px;
+  color: white;
+  filter: brightness(100%);
+}
 
+.upper h1 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.lower {
+  background-image: url(./assets/deal-ana.png);
+  background-size: cover;
+  width: 360px;
+  height: 200px;
+  margin-bottom: 30px;
+  border-radius: 20px;
+  text-align: center;
+  padding-top: 80px;
+  color: white;
+}
+
+.sec2 {
+  background-image: url(./assets/deal-zabo.png);
+  background-size: cover;
+  width: 750px;
+  height: 420px;
+  margin-bottom: 30px;
+  border-radius: 20px;
+  text-align: center;
+  padding-top: 150px;
+  color: white;
+  font-size: 30px;
+}
 
 /* Join Section */
 
@@ -221,7 +264,6 @@ i, .cart {
 
 .join-mail {
   justify-content: space-around;
- 
 }
 
 .mail {
@@ -233,7 +275,6 @@ i, .cart {
   margin-bottom: 500px;
   padding-left: 20px;
   margin-left: 70px;
-  
 }
 
 .sub {
@@ -242,8 +283,7 @@ i, .cart {
   color: white;
   width: 180px;
   height: 50px;
-  margin-left: -500px;
-  
+  margin-left: -1200px;
 }
 
 /* Footer Style */
@@ -275,69 +315,87 @@ footer li {
   margin-bottom: 7px;
 }
 
-
-
 /* Responsive for Mobile */
 
-@media (max-width: 768px){
+@media (max-width: 768px) {
+  /* Common Style */
+  * {
+    margin: 10px, 20px;
+  }
 
- 
+  /* Nav bar */
+
   nav .home {
     display: none;
   }
-  nav .about{
+  nav .about {
     display: none;
   }
-  nav .shop{
+  nav .shop {
     display: none;
   }
 
-  .banner{
+  /* Banner */
+  .banner {
     flex-direction: column-reverse;
   }
-  .banner-img{
+  .banner-img {
     margin-bottom: 15px;
   }
-  .banner-left h1{
+  .banner-left h1 {
     font-size: 25px;
   }
 
+  /* card */
   .card-grid {
-  flex: 1;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
 
-}
+  /* lover */
 
-.badge{
-  display: none;
-}
+  .badge {
+    display: none;
+  }
 
-.plant-lover{
-  flex-direction: column;
-}
-.flower-store{
-  margin-bottom: 15px;
-}
+  .plant-lover {
+    flex-direction: column;
+  }
+  .flower-store {
+    margin-bottom: 15px;
+  }
 
-.footer{
-  flex-direction: column;
-  margin: auto;
+  /* deals */
 
-}
+  .deal-sec {
+    flex-direction: column;
+  }
 
-.join h1{
-  font-size: 22px;
-}
+  .sec2 {
+    width: 360px;
+    height: 200px;
+    text-align: center;
+    padding-top: 80px;
+    font-size: 22px;
+  }
 
-.mail{
-  width: 218px;
-  align-items: center;
-}
-.sub{
-  width: 100px;
-  align-items: center;
-}
+  /* Join */
 
+  .join h1 {
+    font-size: 22px;
+  }
+
+  .mail {
+    width: 218px;
+  }
+  .sub {
+    width: 100px;
+  }
+
+  /* footer */
+  .footer {
+    flex-direction: column;
+    margin-left: 20px;
+  }
 }
