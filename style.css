@@ -386,11 +386,17 @@ footer li {
     font-size: 22px;
   }
 
+  .join-mail {
+    justify-content: space-between;
+  }
+
   .mail {
     width: 218px;
+    margin-left: 110px;
   }
   .sub {
     width: 100px;
+    margin-right: 90px;
   }
 
   /* footer */
